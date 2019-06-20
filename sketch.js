@@ -12,9 +12,9 @@ function draw() {
   noiseDetail(4,0.9)
   var yoff = start // y offset gets 0
   loadPixels() // initiate pixels
-  for(var y=0; y<height; y++) { // loop through column first
+  for(var y=0; y<height; y++) { // loop through rows first
     var xoff=0 // initliaze x offset
-    for(var x=0; x<width; x++) { // loop through rows next
+    for(var x=0; x<width; x++) { // loop through coumns next
       var index = (x+y*width) * 4 // get next pixel (remember pixels[r0,g0,b0,a0...]
       var r = noise(xoff, yoff) * 255 // set noise
 
