@@ -19,9 +19,9 @@ function draw() {
       var r = noise(xoff, yoff) * 255 // set noise
 
       // each pixel's RGB is set to noise
-      pixels[index+0] = r
-      pixels[index+1] = r 
-      pixels[index+2] = r
+      for(var i=0;i<3;i++){
+        pixels[index+i] = r
+      }
       pixels[index+3] = 255
       xoff += inc // go to next x position
     }
